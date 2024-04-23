@@ -26,16 +26,15 @@ def upgrade() -> None:
     
     
     op.bulk_insert(category_list_table, [
-        {'id': 1, 'cat_name': 'Elektronikai eszköz'},
-        {'id': 2, 'cat_name': 'Élelmiszer'},
-        {'id': 3, 'cat_name': 'Gyógyszer'},
-        {'id': 4, 'cat_name': 'Háztartási cikk'},
-        {'id': 5, 'cat_name': 'Játék'},
-        {'id': 6, 'cat_name': 'Könyv'},
-        {'id': 7, 'cat_name': 'Kozmetikum'},
-        {'id': 8, 'cat_name': 'Ruha és kiegészítő'},
-        {'id': 9, 'cat_name': 'Háztartási cikk'},
-        {'id': 10, 'cat_name': 'Egyéb'}
+        {'cat_name': 'Gabona félék'},
+        {'cat_name': 'Gyümölcs'},
+        {'cat_name': 'Hús és hal'},
+        {'cat_name': 'Hüvelyesek, magvak'},
+        {'cat_name': 'Játék'},
+        {'cat_name': 'Tejtermékek'},
+        {'cat_name': 'Tojás'},
+        {'cat_name': 'Zöldségek'},
+        {'cat_name': 'Egyéb'}
     ])
 
 

@@ -20,15 +20,14 @@ depends_on: Union[str, Sequence[str], None] = None
 def upgrade() -> None:
     op.create_table(
         'tracks',
-        sa.Column('id', sa.Integer, primary_key=True),
-        sa.Column('shop', sa.String),
+        sa.Column('id', sa.Integer, primary_key=True, autoincrement=True),
         sa.Column('item_name', sa.String),
-        sa.Column('item_price', sa.Integer)
+        sa.Column('image_url', sa.String),
     )
 
     op.create_table(
         'categories',
-        sa.Column('id', sa.Integer, primary_key=True),
+        sa.Column('id', sa.Integer, primary_key=True, autoincrement=True),
         sa.Column('cat_name', sa.String)
     )
 
